@@ -139,23 +139,24 @@ a:hover:after {
 
 /* line 49, ../scss/main.scss */
 .first {
-  background-color: #11CC88;
+  background-color: #ddd;
 }
 
 /* line 52, ../scss/main.scss */
 .second {
-  background-color: #FFB242;
+  background-color: #3F51B5;
 }
 
 /* line 55, ../scss/main.scss */
 .third {
-  background-color: #418AD0;
+  background-color: rgb(87, 105, 136);
 }
 
 /* line 58, ../scss/main.scss */
 .fourth {
-  background-color: #FF6342;
+  background-color: rgb(129, 138, 152);
 }
+
 
 /* line 62, ../scss/main.scss */
 .opr-next {
