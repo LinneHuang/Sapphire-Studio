@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>OnePageR</title>
     <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 
 
     
@@ -12,7 +13,8 @@
         <style>
 
       /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
-      @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);
+      @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+/*      @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);*/
 /* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,6 +35,7 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
+  font-family: "Inconsolata", serif;
 }
 
 /* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
@@ -193,7 +196,18 @@ h1{
 h1 span{
   font-weight: 600;
 }
-
+h2 {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  text-align: left;
+  font-size: 2em;
+  transform: translate(0, -60%);
+  font-weight: 400;
+  color: white;
+  padding: 2rem;
+  line-height: 2.5rem;
+}
     
 
     </style>
@@ -217,16 +231,21 @@ h1 span{
 
 <div class="opr-container">
     <div class="opr-page opr-current first" data-target="1">
-      <h1><img src="media/s_logo.png" height="179" width="320"></h1>
+      <h1><img src="media/s_logo.png" height="179" width="320"><br><span style="font-size: 20px;">We create interaction experiences for your fashion event</span></h1>
       
         <div class="opr-next"></div>
     </div>
     <div class="opr-page second" data-target="2">
-      <h1>For fashion startups who want more exposures, Sapphire is a fashion event producer that makes interactive fashion show. </h1>
+      <h2>
+        For fashion startups who want more exposures, Sapphire is a fashion event producer that makes interactive fashion show. <br>Sapphire is different because we support local designers and create an interaction experience for the audience.
+      </h2>
         <div class="opr-next"></div>
     </div>
     <div class="opr-page third" data-target="3">
-      <h1>Sapphire is different because we support local designers and create an interaction experience for the audience.</h1>
+      <h2>
+        <a href="http://linnnh.github.io/Sapphire-Studio/blog.html">We are hiring!</a><br>
+        Sapphire is hiring social media editor now<br>
+      </h2>
         <div class="opr-next"></div>
     </div>
     <div class="opr-page fourth" data-target="4">
