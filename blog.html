@@ -123,13 +123,13 @@ a:after {
   position: relative;
   display: block;
   width: 8px;
-  border-bottom: 2px solid #333;
+  border-bottom: 4px solid #008dff;
   transition: 0.3s ease-in-out;
 }
 
 /* line 32, ../scss/main.scss */
 a:hover:after {
-  width: 100%;
+  width: 20%;
 }
 
 /* line 35, ../scss/main.scss */
@@ -196,17 +196,16 @@ h1{
 h1 span{
   font-weight: 600;
 }
-h2 {
-  position: absolute;
-  width: 90%;
-  top: 50%;
-  text-align: left;
-  font-size: 2em;
-  transform: translate(0, -60%);
-  font-weight: 400;
-  color: white;
-  padding: 2rem;
-  line-height: 2.5rem;
+.blogtext {
+    position: absolute;
+    width: 60%;
+    top: 5%;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 400;
+    color: #008dff;
+    padding: 2rem;
+    line-height: 2rem;
 }
     
 
@@ -221,7 +220,12 @@ h2 {
   <body>
 
 <div>
-      <h2>
+      <p class="blogtext">
+        <a href="http://linnnh.github.io/Sapphire-Studio/" style="font-size: 2em;color: #008dff;">←</a>
+
+        <br><br><br><br><br><br>
+         <span style="font-size: 2em;color: black;">We Are hiring!</span><br><span style="font-size: 1em;color: black;">2016 02 17</span><br><br></a><br>
+        <br>
         Sapphire is hiring social media editor now<br>
         The Sapphire team is dedicated to furthering the exposure of local fashion designers and fashion start-ups. We believe in the power of community, and strive to serve our community through our creativity and delivering advanced and immersive experience. As a professional fashion show agency, we provide new meaningful innovations.<br>
         <br>
@@ -245,8 +249,7 @@ h2 {
         <br>
         How to apply –<br>
         Please submit your resume to szhu@cca.edu along with your blog, youtube channel and Facebook post.
-      </h2>
-        <div class="opr-next"></div>
+      </p>
     </div>
 
 

@@ -194,3 +194,15 @@ h2 {
   padding: 2rem;
   line-height: 2.5rem;
 }
+h6 {
+  position: absolute;
+  width: 90%;
+  top: 60%;
+  text-align: center;
+  font-size: 1em;
+  transform: translate(0, -60%);
+  font-weight: 400;
+  color: white;
+  padding: 2rem;
+  line-height: 1.5rem;
+}
