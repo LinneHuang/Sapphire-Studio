@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>What We Learned from the Pitch Experience</title>
+    <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+
+
+    
+    
+    
+        <style>
+
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+/*      @import url(//fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700);*/
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  font-family: "Inconsolata", serif;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_opr.scss */
+.opr-page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 6, ../scss/_opr.scss */
+.opr-current {
+  z-index: 99;
+}
+
+/* line 9, ../scss/_opr.scss */
+.opr-animate {
+  z-index: 100;
+}
+
+/* line 12, ../scss/_opr.scss */
+.opr-nav a[data-target], .opr-next, .opr-prev {
+  cursor: pointer;
+}
+
+/* line 13, ../scss/main.scss */
+body {
+  background-color: #ddd;
+  font-family: 'Roboto Slab', serif;
+  color: #333;
+}
+
+/* line 18, ../scss/main.scss */
+a {
+  text-decoration: none;
+  color: #FFF;
+  display: block;
+}
+
+/* line 24, ../scss/main.scss */
+a:after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 8px;
+  border-bottom: 4px solid #008dff;
+  transition: 0.3s ease-in-out;
+}
+
+/* line 32, ../scss/main.scss */
+a:hover:after {
+  width: 20%;
+}
+
+/* line 35, ../scss/main.scss */
+#nav-main {
+  position: fixed;
+  right: 0;
+  z-index: 999;
+  padding: 20px;
+  margin: 20px;
+  border: 4px solid #FFF;
+}
+
+/* line 43, ../scss/main.scss */
+#nav-main li {
+  float: left;
+}
+
+/* line 46, ../scss/main.scss */
+#nav-main li + li {
+  margin-left: 20px;
+}
+
+/* line 49, ../scss/main.scss */
+.first {
+  background-color: #ddd;
+}
+
+/* line 52, ../scss/main.scss */
+.second {
+  background-color: rgb(26, 71, 152);
+}
+
+/* line 55, ../scss/main.scss */
+.third {
+  background-color: rgb(87, 105, 136);
+}
+
+/* line 58, ../scss/main.scss */
+.fourth {
+  background-color: rgb(129, 138, 152);
+}
+
+/* line 62, ../scss/main.scss */
+.opr-next {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  left: 50%;
+  bottom: 40px;
+  box-shadow: 4px 4px 0 #008DFF;
+  transform: translate(-50%, 0) rotate(45deg);
+  cursor: pointer;
+}
+
+.blogtext {
+    position: absolute;
+    width: 60%;
+    top: 5%;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #008dff;
+    padding: 2rem;
+    line-height: 2rem;
+}
+    
+
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+<div>
+      <p class="blogtext">
+        <a href="http://linnnh.github.io/Sapphire-Studio/" style="font-size: 2em;color: #008dff;">←</a>
+
+        <br><br><br><br><br><br>
+         <span style="font-size: 2em;color: black;">What We Learned from the Pitch Experience</span><br><span style="font-size: 1em;color: black;">2016 02 29</span><br><br></a><br>
+        <br>
+        <br>
+        Being able to present a precise, impressive pitch is very important for startups. In fact, all the knowledge about doing a pitch can be applied to every aspect in the business.     
+        <br>
+        <br>
+        Last week, we had an opportunity to introduce ourself with Christopher Ireland, Elizabeth Glenewinkel (gravitytank), Katy Mogal (Fitbit), David Hendee (Carbon 5) , Steve Diller (Scansion) and Michael Lemme (Duncan/Channon).<br>
+        It was a great experience. We received many stimulating feedback and would love to share with you, fashion friends:
+        <br>
+        <br>
+        Most people were impressive about our choices on the font and the layout. The title font was "handmade" by the Designer, Ming Jaturuntawanichya. The brushy, bold attempt on the font attracted the most audience's eyes. With the bright, vivid color, the pitch deck perfectly reflected in the personality of our startup– compelling and immersive.<br><br>
+
+        We also received some feedback to improve our pitch deck.<br><br>
+
+        <b>Providing Cases Study, Such as Videos:</b><br>
+        Apart from the value, culture, and how our agency works, we should include a clear and intriguing example about our product to convince the potential clients.<br><br>
+
+        <b>Revise the Wording</b><br>
+        Another lesson we learned from the presentation is that we need to make sure the language uses are 100% correct. A pitch with noticeable grammatical errors make it unprofessional.<br><br>
+
+        <b>To Be Precise on the service design process:</b><br>
+        Instead of introducing the process with general terms like consulting, researching and the like, we should make it more detailed. Maybe talking about the process with a real project is a better strategy.<br><br>
+
+        <b>Selected a new Typeface:</b><br>
+        We tried to make the hierarchy of the content clearly. However, we highlighted the title of each slice too much. They caught people’s attention, so that people may ignore the content below.<br><br>
+
+        The ability of communication is very crucial for a designer. We are very appreciate every feedback to make Sapphire Agency better.
+<br><br><br>
+
+      </p>
+    </div>
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://schliflo.github.io/OnePageR/js/jquery.touchSwipe.min.js'></script>
+<script src='http://schliflo.github.io/OnePageR/js/opr.js'></script>
+
+    
+    
+    
+    
+  </body>
+</html>
